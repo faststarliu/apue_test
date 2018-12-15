@@ -1,0 +1,13 @@
+  想要使用，还要进行下面操作，完成相关配置.
+
+  在http://www.apuebook.com/下载src.tar.gz源代码的压缩包。
+
+   1、解压至/home/user/目录下
+
+   2、修改 Make.defines.linux中的WKDIR=/home/xxx/apue.2e，为WKDIR=/home/user/apue.2e
+
+   3、返回至apue.2e目录下面，修改linux.mk，将里面的nawk全部改为awk，可以使用这个命令 ：%s/nawk/awk/g 
+
+   4、make
+
+   5、将/home/user/apue.2e/include/apue.h和/home/user/apue.2e/lib/error.c复制到/usr/include目录下
